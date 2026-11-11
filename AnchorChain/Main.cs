@@ -164,9 +164,9 @@ public class AnchorChainLoader : BaseUnityPlugin, Preloader.IPluginLoader
 				foreach (ACIncompatibility incompatibility in pluginData.Incompatibilities) {
 					if (recognizedPlugins.ContainsKey(incompatibility.GUID)) {
 						Logger.LogWarning($"Skipping mod \"{pluginData.Name}\" ({pluginData.GUID}); detected incompatible mod \"{incompatibility.GUID}\"");
+						toRemove.Add(pluginData);
+						break;
 					}
-					toRemove.Add(pluginData);
-					break;
 				}
 			}
 

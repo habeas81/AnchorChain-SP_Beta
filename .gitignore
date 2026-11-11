@@ -54,6 +54,9 @@ nunit-*.xml
 [Rr]eleasePS/
 dlldata.c
 
+# Packaged output (scripts/Package.ps1)
+dist/
+
 # Benchmark Results
 BenchmarkDotNet.Artifacts/
 
