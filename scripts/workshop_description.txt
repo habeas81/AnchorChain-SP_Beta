@@ -7,7 +7,7 @@ This is [b]an add-on to the original Anchor Chain, not a replacement for its ins
 [olist]
 [*] Follow the install instructions for the original Anchor Chain (BepInEx + the AnchorChain preloader) from its Workshop page / GitHub: https://github.com/SeaPower-Modders/AnchorChain
 [*] Subscribe to this item (Anchor Chain Beta Fix) in addition to the original Anchor Chain.
-[*] Download [b]ACPreloader-2.0.0.zip[/b] from https://github.com/habeas81/AnchorChain-SP_Beta/raw/main/release/ACPreloader-2.0.0.zip and extract it into your Sea Power game folder, replacing BepInEx\plugins\AnchorChain.Preloader.dll. This is a one-time step; Steam cannot update that file.
+[*] Download [b]ACPreloader-2.0.0.zip[/b] from https://github.com/habeas81/AnchorChain-SP_Beta/raw/main/preloader/ACPreloader-2.0.0.zip and extract it into your Sea Power game folder, replacing BepInEx\plugins\AnchorChain.Preloader.dll. This is a one-time step; Steam cannot update that file.
 [*] Start the game, open Mods, enable [b]AnchorChain_Beta[/b] and place it above Anchor Chain. Then restart the game.
 [/olist]
 The new preloader picks the highest AnchorChain version among enabled mod folders, so it is fine to leave the original enabled; switch it off if you want a cleaner log.

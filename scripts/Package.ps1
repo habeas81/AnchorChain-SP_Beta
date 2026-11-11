@@ -25,5 +25,5 @@ Compress-Archive -Path (Join-Path $Dist "stage\BepInEx") -DestinationPath (Join-
 Remove-Item (Join-Path $Dist "stage") -Recurse -Force
 Get-ChildItem $Dist -Recurse -File | Select-Object FullName, Length
 
-New-Item -ItemType Directory (Join-Path $Root 'release') -Force | Out-Null
-Copy-Item (Join-Path $Dist 'ACPreloader-2.0.0.zip') (Join-Path $Root 'release') -Force
+New-Item -ItemType Directory (Join-Path $Root 'preloader') -Force | Out-Null
+Copy-Item (Join-Path $Dist 'ACPreloader-2.0.0.zip') (Join-Path $Root 'preloader') -Force
