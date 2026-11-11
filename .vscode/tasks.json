@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Package",
+      "command": "powershell",
+      "type": "process",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/scripts/Package.ps1"],
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      // Prompts for your Steam password / Steam Guard code in the terminal. Never run automatically.
+      "label": "Package and Publish to Workshop",
+      "dependsOn": "Package",
+      "command": "powershell",
+      "type": "process",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/scripts/Publish-Workshop.ps1"],
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }
+  ]
+}

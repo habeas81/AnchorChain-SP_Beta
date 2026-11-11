@@ -1,5 +1,9 @@
 {
   "appId": 1286220,
   "workshopItemId": 0,
-  "contentFolder": "dist/AnchorChain_Beta"
+  "contentFolder": "dist/AnchorChain_Beta",
+  "title": "Anchor Chain (Beta Fix)",
+  "descriptionFile": "scripts/workshop_description.txt",
+  "previewFile": "workshop/thumbnail.png",
+  "visibility": 2
 }

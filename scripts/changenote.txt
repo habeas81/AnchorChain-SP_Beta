@@ -1,0 +1,7 @@
+[b]v1.2.0 (Beta Fix)[/b]
+[list]
+[*] Anchor Chain now loads on the Public Beta (3D globe map). Install the new preloader once (see the description).
+[*] Plugins using [ACConfig] load on both the release and the beta.
+[*] A plugin that fails to load no longer freezes startup.
+[*] Fixed plugins being skipped because of an incompatibility with a mod that is not installed.
+[/list]

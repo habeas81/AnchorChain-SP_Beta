@@ -1,0 +1,27 @@
+[h1]Anchor Chain (Beta Fix)[/h1]
+A community-maintained build of the Sea Power chainloader that works on the [b]Public Beta (3D globe / LCC map)[/b] as well as the current release. Without it, no Anchor Chain mod loads on the beta (the log shows [i]Could not find AnchorChain chainloader[/i]).
+
+This is [b]an add-on to the original Anchor Chain, not a replacement for its install steps[/b].
+
+[h2]Install[/h2]
+[olist]
+[*] Follow the install instructions for the original Anchor Chain (BepInEx + the AnchorChain preloader) from its Workshop page / GitHub: https://github.com/SeaPower-Modders/AnchorChain
+[*] Subscribe to this item (Anchor Chain Beta Fix) in addition to the original Anchor Chain.
+[*] Download [b]ACPreloader-2.0.0.zip[/b] from https://github.com/habeas81/AnchorChain-SP_Beta/raw/main/release/ACPreloader-2.0.0.zip and extract it into your Sea Power game folder, replacing BepInEx\plugins\AnchorChain.Preloader.dll. This is a one-time step; Steam cannot update that file.
+[*] Start the game, open Mods, enable [b]AnchorChain_Beta[/b] and place it above Anchor Chain. Then restart the game.
+[/olist]
+The new preloader picks the highest AnchorChain version among enabled mod folders, so it is fine to leave the original enabled; switch it off if you want a cleaner log.
+
+[h2]What changed[/h2]
+[list]
+[*] Waits for the game to list its mod folders (they are not ready yet on the beta) instead of giving up.
+[*] The preloader is now a thin stub that reads no game types, so future game updates cannot break it again. Fixes ship through this Workshop item.
+[*] Respects the Mod Manager on/off switch for AnchorChain copies.
+[*] [ACConfig] plugins load on both the release and the beta (the original 1.1.0 calls an IniHandler.open overload that neither has).
+[*] A plugin that fails to load no longer freezes startup.
+[*] Fixed [ACIncompatibility] removing plugins even when the incompatible mod was not installed.
+[/list]
+
+[h2]Credits[/h2]
+Based on the open pull requests #20 and #24 by struckl to SeaPower-Modders/AnchorChain, itself by JustOneOther and contributors (MIT license). Source: https://github.com/habeas81/AnchorChain-SP_Beta
+Mods that crash or fail on the beta for their own reasons (for example Automatic SAR) are not fixed by this item.
